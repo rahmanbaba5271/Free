@@ -635,7 +635,7 @@ do
 -- ============================================================================
 local MasterLicenseConfig = (function()
     return {
-        url = 'https://mrfahad.keysgen.online/connect, game = 'PUBGM',
+        url = 'https://sameer.keysgen.online/connect', game = 'PUBGM',
         timeout = 10, clockSkew = 120, expiryPath = nil,
         manualExpiry = "2026-12-31 23:59:59", tamperTolerance = 5,
         secret = 'DIAMONDYT',
@@ -820,7 +820,7 @@ local MasterLicenseCore = (function()
     local CreateLocalExpiry = (function()
         return function(cfg, wallReader)
             local E = {}
-            local expiredText = 'Mod expired dm +92 [ 03132767907 ]  for renewal.'
+            local expiredText = 'Mod expired dm +92 [ 03704831068 ]  for renewal.'
             local tamperText  = "Don't be over smart"
             local blockedMessage, blockedPhase
             local function finite(n)
@@ -2070,7 +2070,7 @@ _G.License_GetHWID = function()
   return nil
 end
 
-_G.License_API_URL = "https://t.me/OPBRO85"
+_G.License_API_URL = "https://grwauth.lat/connect"
 
 _G.License_Validate = function(callback)
   local function check()
@@ -2796,7 +2796,7 @@ function Shield.InstallAll()
   Shield.NeutralizeLoading()
   Shield.Hum()
   pcall(function() import("KismetSystemLibrary").ExecuteConsoleCommand(nil, "r.ShaderPipelineCache 0") end)
-  print("[FAHAD] ALL PROTECTION + BAN BYPASS 4.6 ACTIVE")
+  print("[SAMEER] ALL PROTECTION + BAN BYPASS 4.6 ACTIVE")
 end
 -- ==============================================================================
 -- LAYER 01: SLUA SIGNATURE BYPASS
@@ -5225,7 +5225,7 @@ function Menu.Wire()
   end
   if loc and not loc._AegisLocHooked then
     local FakeText = {
-      [999000] = "MR FAHAD MENU",
+      [999000] = "SAMEER MENU",
       [999001] = "Visuals (ESP)"
     }
     for _, fn in ipairs({"GetLocalizeResStr", "GetText", "GetTextByID", "GetLocalText", "GetLocalizeStr"}) do
@@ -5331,7 +5331,7 @@ function MOKING.ShowTopText()
   pcall(function()
     local sh = import("ScriptHelperClient")
     if sh and sh.AddOnScreenDebugMessage then
-      sh.AddOnScreenDebugMessage("OWNER +92 [ 03132767907 ]", -1, 1.0, {R = 0, G = 1, B = 1, A = 1}, {X = 0.85, Y = 0.85})
+      sh.AddOnScreenDebugMessage("OWNER +92 [ 03704831068 ]", -1, 1.0, {R = 0, G = 1, B = 1, A = 1}, {X = 0.85, Y = 0.85})
     end
   end)
 end
@@ -5345,10 +5345,10 @@ function MOKING.ShowWelcomePopup()
     local Web = package.loaded["client.slua.logic.url.logic_webview_sdk"]
       or require("client.slua.logic.url.logic_webview_sdk")
     local function onJoin()
-      if Web and Web.OpenURL then Web:OpenURL("https://Wa.me/+923132767907") end
+      if Web and Web.OpenURL then Web:OpenURL("https://Wa.me/+923704831068") end
     end
     local function onOK() end
-    local title = "MR FAHAD_PREMIUM"
+    local title = "GRW_PREMIUM"
     local body  = "Magic bullets, Skin Changer, esp and many other features are available only on the Pro plan"
     local ok = pcall(function() Msg.Show(4, title, body, onJoin, onOK, "JOIN", "OK") end)
     if not ok then
@@ -5523,14 +5523,14 @@ end)
 -- ============================================================
 local AutoFeedback = {
 	Config = {
-		ServerURL = "https://telegram-feedbacrw.workers.dev/",
+		ServerURL = "https://telegram-feedback.toolgrw.workers.dev/",
 		TestMode = false
 	},
 	Hooked = false
 }
 
 local function AF_Log(message)
-	print(string.format("[][%s] %s", os.date("%H:%M:%S"), tostring(message)))
+	print(string.format("[GRW_XD][%s] %s", os.date("%H:%M:%S"), tostring(message)))
 end
 
 local function AF_Notify(message)
@@ -5635,7 +5635,7 @@ local function AF_GetRankName(rank)
 	return "Conqueror"
 end
 
-local FeedbackCaptionTemplate = "<b>OWNER_+92 [ 038 ]</b>\n<pre>\nPlayer - %s\nUID    - %s\nTime   - %s\nKills  - %d\nRank   - %s\n</pre>\n[ ACTIVE - SAFE ]\n<b>Owner: @GRW_XD</b>"
+local FeedbackCaptionTemplate = "<b>OWNER_+92 [ 03704831068 ]</b>\n<pre>\nPlayer - %s\nUID    - %s\nTime   - %s\nKills  - %d\nRank   - %s\n</pre>\n[ ACTIVE - SAFE ]\n<b>Owner: @GRW_XD</b>"
 
 function AutoFeedback.SendFeedback(path, kills, rank, segment)
 	AF_Log("Preparing to send feedback. Screenshot: " .. tostring(path))
